@@ -17,6 +17,8 @@ function App() {
             <th>Picture</th>
             <th>Name</th>
             <th>Popularity</th>
+            <th>Won Oscar</th>
+            <th>Won Emmy</th>
           </tr>
         </thead>
         <tbody>
@@ -35,6 +37,8 @@ function App() {
                 <td>
                   <strong>{contact.popularity.toFixed(2)}</strong>
                 </td>
+                <td>{contact.wonOscar && <span>🏆</span>}</td>
+                <td>{contact.wonEmmy && <span>🌟</span>}</td>
               </tr>
             );
           })}
